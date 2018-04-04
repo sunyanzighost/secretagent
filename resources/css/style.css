@@ -1,4 +1,6 @@
-body{
+body,
+.product p,
+.detail p{
   margin:0;
   background-color:black;
   font-size:18px;
@@ -8,7 +10,10 @@ body{
 
 header,
 .title,
-.navigation {
+.navigation,
+.content,
+.detail,
+footer{
   width:960px;
   margin: 0 auto;
 }
@@ -57,4 +62,70 @@ nav {
 
 .navigation li{
   margin: 0.75rem 0;
+}
+
+.product-img {
+  background-color: white;
+  height: 9rem;
+  width:9rem;
+  margin: 2rem auto;
+  display:flex;
+  align-items: center;
+}
+
+.product-img img{
+  max-width: 8rem;
+}
+
+.product {
+  border: 4px solid black;
+  width:30%;
+  padding:0;
+  text-align:center;
+}
+
+.content,
+.detail{
+  display:flex;
+  justify-content: space-between;
+}
+
+.main {
+  background-color:white;
+}
+
+.product p{
+  padding:0.5rem;
+}
+
+.content{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.location-hour span{
+  color:black;
+  margin-left:0;
+  margin-right:0;
+}
+
+.location-hour{
+  width:35%;
+}
+
+.location-hour p{
+  padding-left: 2rem;
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+
+.detail{
+  padding-bottom: 4rem;
+}
+
+footer{
+  text-align:left;
+  height: 5rem;
+  display:flex;
+  align-items: center;
 }
