@@ -6,6 +6,7 @@ body,
   font-size:18px;
   color:white;
   font-family:Helvetica;
+  max-width:100%;
 }
 
 header,
@@ -19,7 +20,7 @@ footer{
 }
 
 header {
-  margin: 0.66rem auto;
+  margin: 0.66rem auto !important;
 }
 
 header img{
@@ -62,6 +63,10 @@ nav {
 
 .navigation li{
   margin: 0.75rem 0;
+}
+
+.menu-bar{
+  display:none;
 }
 
 .product-img {
@@ -128,4 +133,81 @@ footer{
   height: 5rem;
   display:flex;
   align-items: center;
+}
+
+@media only screen and (max-width:1024px){
+  .nav-bar {
+    display:none;
+  }
+  .menu-bar{
+    display:inline-block;
+  }
+
+  .navigation ul{
+    justify-content: center;
+  }
+
+  #glasses {
+    display:none;
+  }
+
+  header,
+  .title,
+  .navigation,
+  .content,
+  .detail,
+  footer{
+    width:100%;
+    margin: 0 auto;
+  }
+
+  .product {
+    width:47%;
+  }
+
+
+@media only screen and (max-width: 470px){
+  .banner {
+    height:15rem;
+  }
+  .title-text p{
+    font-size: 0.77rem;
+  }
+  .title-text h1{
+    font-size: 1rem;
+  }
+
+  .title-text{
+    top:10rem;
+    padding: 1rem 2rem;
+    width:100%;
+  }
+  #watch{
+    display:none;
+  }
+
+  .product {
+    width:90%;
+  }
+
+  .content{
+    justify-content: center;
+  }
+
+  .detail{
+    flex-direction:column;
+    align-items: center;
+  }
+  .location-hour{
+    width:90%;
+    margin-bottom:0.5rem;
+  }
+
+  footer span{
+    display:inline-block;
+  }
+  footer p{
+    color:blue;
+    text-align:right;
+  }
 }
