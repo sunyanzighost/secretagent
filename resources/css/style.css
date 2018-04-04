@@ -129,7 +129,6 @@ nav {
 }
 
 footer{
-  text-align:left;
   height: 5rem;
   display:flex;
   align-items: center;
@@ -203,11 +202,6 @@ footer{
     margin-bottom:0.5rem;
   }
 
-  footer span{
-    display:inline-block;
-  }
-  footer p{
-    color:blue;
-    text-align:right;
-  }
+  footer {
+  justify-content:center;  }
 }
